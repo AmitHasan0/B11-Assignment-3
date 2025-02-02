@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome cdn -->
     <script
       src="https://kit.fontawesome.com/2e656b67ab.js"
@@ -32,6 +38,7 @@
             },
             fontFamily: {
               sora: ["Sora", "serif"],
+              ADLaMDisplay: ["ADLaM Display", "serif"],
             },
           },
         },
@@ -39,22 +46,160 @@
     </script>
   </head>
   <body class="font-sora">
-    <main class="max-w-screen-xl mx-auto py-8">
-      <header class="">
-        <nav>
+    <main class="mx-auto px-4 pt-4 lg:px-10">
+      <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+        <nav class="w-full">
+          <div class="flex justify-between items-center md:hidden">
+            <img src="images/Group.png" alt="" />
+            <i class="fa-solid fa-bars md:hidden text-green-500 text-2xl"></i>
+          </div>
+          <hr class="border-green-700 mt-2 md:hidden" />
           <div class="flex justify-center items-center">
-            <div class="" >
+            <div class="md:flex hidden">
               <img src="images/logo-header.png" alt="" />
             </div>
 
-            <ul class="text-xl flex space-x-6">
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="">
+              <ul class="md:flex gap-6 pl-80 hidden">
+                <li>
+                  <a class="hover:text-gray-600" href="#">Product</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-600" href="#">Services</a>
+                </li>
+                <li>
+                  <a class="hover:text-gray-600" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex hidden pl-24">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="md:flex hidden pl-8 space-x-2">
+              <button
+                class="border border-green-600 rounded-lg hover:bg-green-600 px-6 py-2"
+              >
+                Login
+              </button>
+              <button class="bg-[#179800] px-8 py-2 rounded-lg text-white">
+                Register
+              </button>
+            </div>
           </div>
         </nav>
+        <!-- hero section -->
+        <section class="mt-20">
+          <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-semibold mb-8">
+              Freshness
+              <span class="text-[#179800]"
+                >You Can <br />
+                Count</span
+              >
+              On, Prices You’ll Love!
+            </h1>
+            <p class="font-normal text-xl text-gray-600">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry <br />
+              staples, we’ve got you covered every day!
+            </p>
+          </div>
+          <div class="mt-10">
+            <img class="mx-auto" src="images/hero-vegetables.png" alt="" />
+          </div>
+        </section>
       </header>
+      <!-- services section -->
+      <section class="mt-36 mb-36">
+        <h2 class="lg:ml-44 pb-2 text-4xl font-semibold text-[#179800]">
+          Services
+        </h2>
+        <!-- Service card section -->
+        <div
+          class="grid lg:grid-cols-3 sm:grid-cols-1 lg:gap-6 gap-4 justify-center mx-auto lg:ml-44 lg:mr-44"
+        >
+          <!-- cards 1 -->
+          <div
+            class="mt-8 py-8 px-8 w-full bg-[#EFEBE3] rounded-2xl text-center"
+          >
+            <img
+              class="mx-auto pt-4 pb-5 p-4 w-35 h-35 shrink-0 grow-0 rounded-full bg-white"
+              src="images/service.png"
+              alt=""
+            />
+            <div>
+              <h4 class="text-2xl font-semibold pb-4 pt-4">24/7 Services</h4>
+              <p class="">
+                24/7 services often employ complex schemes that ensure their
+                resistance to potential disruption. 24 service is available
+                anytime.
+              </p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="lg:mt-8 py-8 px-8 bg-[#EFEBE3] rounded-2xl text-center">
+            <img
+              class="mx-auto pt-4 pb-5 p-4 w-35 h-35 shrink-0 grow-0 rounded-full bg-white"
+              src="images/delivery.png"
+              alt=""
+            />
+            <div>
+              <h4 class="text-2xl font-semibold pb-4 pt-4">Fast Delivery</h4>
+              <p class="">
+                There are many variants of quick delivery service models like
+                same-day delivery, 30 minutes delivery, or 10 minutes delivery.
+              </p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="lg:mt-8 py-8 px-8 bg-[#EFEBE3] rounded-2xl text-center">
+            <img
+              class="mx-auto pt-4 pb-5 p-4 w-35 h-35 shrink-0 grow-0 rounded-full bg-white"
+              src="images/healthy.png"
+              alt=""
+            />
+            <div>
+              <h4 class="text-2xl font-semibold pb-4 pt-4">Healthy Products</h4>
+              <p class="">
+                Health products are goods and substances used to maintain or
+                improve health. They include vitamins, minerals, herbal
+                medicines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular Products section -->
+      <section class="bg-[#EFEBE3] mb-24">
+        <h2 class="lg:ml-44 pb-2 text-4xl font-semibold text-[#179800] pt-36">
+          Popular Products
+        </h2>
+        <!-- Discount card -->
+
+        <div
+          class="bg-gradient-to-tl from-[#ffffff] to-[#53DB3A] h-96 w-96 rounded-lg relative"
+        >
+          <h2
+            class="text-white font-normal text-3xl pt-12 pl-8 font-ADLaMDisplay"
+          >
+            30% off
+          </h2>
+          <p class="font-normal text-base w-3/4 pl-8 pt-4 text-[#111111]">
+            Discover a world of treats, toys, and essentials handpicked for
+          </p>
+          <div class="pl-8 pt-4">
+            <button class="px-5 py-2 bg-white rounded-lg font-normal text-xl">
+              Buy Now
+            </button>
+          </div>
+          <img
+            class="absolute top-32 right-2"
+            src="images/vegetable-offer.png"
+            alt=""
+          />
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
